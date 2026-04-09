@@ -315,6 +315,13 @@ if user_input:
                 vis_gp = detect_vis_intent(user_input, extract_entities(user_input)["tracks"])
                 if vis_gp:
                     st.session_state["vis_track"] = vis_gp
+                    confirm_msg = f"Sure! Loading the track map for **{vis_gp}** 🗺️"
+                    st.markdown(confirm_msg)
+                    st.session_state.messages.append({
+                        "role": "assistant",
+                        "content": confirm_msg,
+                        "entities": {"tracks": [vis_gp], "drivers": [], "raw_entities": []},
+                    })
                     st.rerun()
 
                 answer, entities = ask(user_input, st.session_state.messages)
@@ -342,6 +349,9 @@ if user_input:
             except Exception as e:
                 st.error(f"Sorry, something went wrong: {str(e)}")
 
+# ── Track visualisation output (main area) ────────────────────────────────
+render_track_output()
+
 # Sidebar
 with st.sidebar:
     st.header("How it works")
@@ -358,7 +368,6 @@ with st.sidebar:
     st.divider()
     render_sidebar_controls()
     st.divider()
-    render_track_output()
     if st.button("Clear chat history"):
         st.session_state.messages = []
         st.rerun()
