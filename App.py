@@ -43,6 +43,7 @@ TRACK_ALIASES = {
     "belgium":          "Belgian Grand Prix",
     "belgian":          "Belgian Grand Prix",
     "suzuka":           "Japanese Grand Prix",
+    "suzuka circuit":   "Japanese Grand Prix",
     "japan":            "Japanese Grand Prix",
     "japanese":         "Japanese Grand Prix",
     "singapore":        "Singapore Grand Prix",
