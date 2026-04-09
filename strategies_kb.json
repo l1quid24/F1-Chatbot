@@ -1,0 +1,294 @@
+{
+    "Australian Grand Prix": [
+        [
+            "INTERMEDIATE -> INTERMEDIATE -> INTERMEDIATE -> INTERMEDIATE -> HARD -> INTERMEDIATE",
+            7
+        ],
+        [
+            "INTERMEDIATE -> INTERMEDIATE -> INTERMEDIATE -> INTERMEDIATE -> MEDIUM -> INTERMEDIATE",
+            3
+        ]
+    ],
+    "Chinese Grand Prix": [
+        [
+            "MEDIUM -> HARD",
+            8
+        ],
+        [
+            "HARD -> MEDIUM",
+            2
+        ]
+    ],
+    "Japanese Grand Prix": [
+        [
+            "MEDIUM -> HARD",
+            9
+        ],
+        [
+            "HARD -> MEDIUM",
+            1
+        ]
+    ],
+    "Bahrain Grand Prix": [
+        [
+            "SOFT -> MEDIUM -> MEDIUM",
+            2
+        ],
+        [
+            "SOFT -> MEDIUM -> SOFT",
+            2
+        ],
+        [
+            "MEDIUM -> MEDIUM -> HARD",
+            2
+        ]
+    ],
+    "Saudi Arabian Grand Prix": [
+        [
+            "MEDIUM -> HARD",
+            8
+        ],
+        [
+            "HARD -> MEDIUM",
+            2
+        ]
+    ],
+    "Miami Grand Prix": [
+        [
+            "MEDIUM -> HARD -> nan",
+            8
+        ],
+        [
+            "HARD -> MEDIUM -> nan",
+            2
+        ]
+    ],
+    "Emilia Romagna Grand Prix": [
+        [
+            "MEDIUM -> HARD -> HARD",
+            8
+        ],
+        [
+            "HARD -> MEDIUM -> HARD",
+            1
+        ],
+        [
+            "HARD -> MEDIUM",
+            1
+        ]
+    ],
+    "Monaco Grand Prix": [
+        [
+            "MEDIUM -> HARD -> HARD",
+            2
+        ],
+        [
+            "MEDIUM -> SOFT -> HARD",
+            2
+        ],
+        [
+            "MEDIUM -> MEDIUM -> HARD",
+            2
+        ]
+    ],
+    "Spanish Grand Prix": [
+        [
+            "SOFT -> MEDIUM -> SOFT -> SOFT",
+            7
+        ],
+        [
+            "SOFT -> MEDIUM -> MEDIUM -> SOFT",
+            1
+        ],
+        [
+            "SOFT -> SOFT -> MEDIUM -> SOFT",
+            1
+        ]
+    ],
+    "Canadian Grand Prix": [
+        [
+            "MEDIUM -> HARD -> HARD -> HARD -> HARD -> HARD",
+            5
+        ],
+        [
+            "HARD -> MEDIUM -> MEDIUM -> MEDIUM -> MEDIUM",
+            2
+        ],
+        [
+            "MEDIUM -> HARD -> HARD -> SOFT -> SOFT -> SOFT",
+            1
+        ]
+    ],
+    "Austrian Grand Prix": [
+        [
+            "MEDIUM -> HARD -> MEDIUM",
+            4
+        ],
+        [
+            "MEDIUM -> MEDIUM -> HARD",
+            2
+        ],
+        [
+            "MEDIUM -> HARD",
+            2
+        ]
+    ],
+    "British Grand Prix": [
+        [
+            "INTERMEDIATE -> INTERMEDIATE -> MEDIUM",
+            7
+        ],
+        [
+            "INTERMEDIATE -> INTERMEDIATE -> SOFT",
+            1
+        ],
+        [
+            "INTERMEDIATE -> SOFT -> INTERMEDIATE -> SOFT",
+            1
+        ]
+    ],
+    "Belgian Grand Prix": [
+        [
+            "INTERMEDIATE -> MEDIUM",
+            9
+        ],
+        [
+            "INTERMEDIATE -> HARD",
+            1
+        ]
+    ],
+    "Hungarian Grand Prix": [
+        [
+            "MEDIUM -> HARD",
+            6
+        ],
+        [
+            "MEDIUM -> HARD -> HARD",
+            4
+        ]
+    ],
+    "Dutch Grand Prix": [
+        [
+            "MEDIUM -> HARD -> HARD",
+            3
+        ],
+        [
+            "MEDIUM -> HARD -> SOFT",
+            3
+        ],
+        [
+            "HARD -> MEDIUM",
+            2
+        ]
+    ],
+    "Italian Grand Prix": [
+        [
+            "MEDIUM -> HARD",
+            6
+        ],
+        [
+            "MEDIUM -> SOFT",
+            2
+        ],
+        [
+            "HARD -> MEDIUM",
+            2
+        ]
+    ],
+    "Azerbaijan Grand Prix": [
+        [
+            "MEDIUM -> HARD",
+            6
+        ],
+        [
+            "HARD -> MEDIUM",
+            4
+        ]
+    ],
+    "Singapore Grand Prix": [
+        [
+            "MEDIUM -> HARD",
+            6
+        ],
+        [
+            "SOFT -> HARD",
+            1
+        ],
+        [
+            "SOFT -> MEDIUM",
+            1
+        ]
+    ],
+    "United States Grand Prix": [
+        [
+            "MEDIUM -> SOFT",
+            9
+        ],
+        [
+            "SOFT -> MEDIUM",
+            1
+        ]
+    ],
+    "Mexico City Grand Prix": [
+        [
+            "SOFT -> MEDIUM -> SOFT",
+            5
+        ],
+        [
+            "SOFT -> MEDIUM",
+            3
+        ],
+        [
+            "MEDIUM -> SOFT",
+            2
+        ]
+    ],
+    "São Paulo Grand Prix": [
+        [
+            "SOFT -> MEDIUM -> MEDIUM",
+            4
+        ],
+        [
+            "MEDIUM -> SOFT -> MEDIUM",
+            3
+        ],
+        [
+            "HARD -> MEDIUM -> MEDIUM -> SOFT",
+            1
+        ]
+    ],
+    "Las Vegas Grand Prix": [
+        [
+            "MEDIUM -> HARD",
+            7
+        ],
+        [
+            "HARD -> MEDIUM",
+            2
+        ],
+        [
+            "SOFT -> HARD",
+            1
+        ]
+    ],
+    "Qatar Grand Prix": [
+        [
+            "MEDIUM -> MEDIUM -> HARD",
+            10
+        ]
+    ],
+    "Abu Dhabi Grand Prix": [
+        [
+            "MEDIUM -> HARD",
+            4
+        ],
+        [
+            "HARD -> MEDIUM",
+            2
+        ],
+        [
+            "SOFT -> HARD -> MEDIUM",
+            2
+        ]
+    ]
+}

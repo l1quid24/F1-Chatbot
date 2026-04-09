@@ -1,0 +1,90 @@
+{
+    "Bahrain Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 199.88
+    },
+    "Saudi Arabian Grand Prix": {
+        "cluster": "High-speed",
+        "avg_speed": 235.11
+    },
+    "Australian Grand Prix": {
+        "cluster": "High-speed",
+        "avg_speed": 230.74
+    },
+    "Azerbaijan Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 202.16
+    },
+    "Miami Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 210.69
+    },
+    "Monaco Grand Prix": {
+        "cluster": "Low-speed / street-like",
+        "avg_speed": 153.27
+    },
+    "Spanish Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 213.35
+    },
+    "Canadian Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 203.64
+    },
+    "Austrian Grand Prix": {
+        "cluster": "High-speed",
+        "avg_speed": 223.01
+    },
+    "British Grand Prix": {
+        "cluster": "High-speed",
+        "avg_speed": 228.2
+    },
+    "Hungarian Grand Prix": {
+        "cluster": "Low-speed / street-like",
+        "avg_speed": 188.63
+    },
+    "Belgian Grand Prix": {
+        "cluster": "High-speed",
+        "avg_speed": 226.5
+    },
+    "Dutch Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 203.22
+    },
+    "Italian Grand Prix": {
+        "cluster": "High-speed",
+        "avg_speed": 241.38
+    },
+    "Singapore Grand Prix": {
+        "cluster": "Low-speed / street-like",
+        "avg_speed": 179.43
+    },
+    "Japanese Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 211.61
+    },
+    "Qatar Grand Prix": {
+        "cluster": "High-speed",
+        "avg_speed": 224.68
+    },
+    "United States Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 194.59
+    },
+    "Mexico City Grand Prix": {
+        "cluster": "Low-speed / street-like",
+        "avg_speed": 183.6
+    },
+    "S?o Paulo Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 204.42
+    },
+    "Las Vegas Grand Prix": {
+        "cluster": "High-speed",
+        "avg_speed": 226.03
+    },
+    "Abu Dhabi Grand Prix": {
+        "cluster": "Mixed",
+        "avg_speed": 212.42
+    }
+}

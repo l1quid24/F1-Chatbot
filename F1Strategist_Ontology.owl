@@ -1,0 +1,1191 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/johns/ontologies/2026/2/F1/"
+     xml:base="http://www.semanticweb.org/johns/ontologies/2026/2/F1/"
+     xmlns:f1="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/F1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#atCorner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#atCorner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Telemetry"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Corner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#belongsToTrackCluster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#belongsToTrackCluster">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Cluster"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#hasTelemetry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#hasTelemetry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Telemetry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#racesForTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#racesForTeam">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#recommendedForTrack -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#recommendedForTrack">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#recommendedForWeather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#recommendedForWeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Weather"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#triggersStrategyAdjustment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#triggersStrategyAdjustment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SafetyCar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#usesTire -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#usesTire">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#TireCompound"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#avgSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#avgSpeed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#clusterName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#clusterName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Cluster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#driverName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#driverName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#kpiName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#kpiName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#KPI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#strategyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#strategyName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#teamName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#teamName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#trackName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#trackName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#weatherName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#weatherName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Analytics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Analytics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Cluster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Cluster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Corner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Corner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#KPI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#KPI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Recommendation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Recommendation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Analytics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SafetyCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SafetyCar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Session -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Session">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Telemetry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Telemetry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#TireCompound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#TireCompound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Weather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AbuDhabiGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AbuDhabiGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">212.42</f1:avgSpeed>
+        <f1:trackName>Abu Dhabi Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Alpine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Alpine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team"/>
+        <f1:teamName>Alpine</f1:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AstonMartin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AstonMartin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team"/>
+        <f1:teamName>Aston Martin</f1:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AustralianGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AustralianGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">230.74</f1:avgSpeed>
+        <f1:trackName>Australian Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AustrianGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AustrianGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">223.01</f1:avgSpeed>
+        <f1:trackName>Austrian Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AvgThrottle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AvgThrottle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#KPI"/>
+        <f1:kpiName>Average Throttle</f1:kpiName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AzerbaijanGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AzerbaijanGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">202.16</f1:avgSpeed>
+        <f1:trackName>Azerbaijan Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BahrainGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BahrainGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">199.88</f1:avgSpeed>
+        <f1:trackName>Bahrain Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BelgianGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BelgianGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">226.5</f1:avgSpeed>
+        <f1:trackName>Belgian Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BrakeRatio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BrakeRatio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#KPI"/>
+        <f1:kpiName>Brake Ratio</f1:kpiName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BrakingPoint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BrakingPoint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#KPI"/>
+        <f1:kpiName>Braking Point</f1:kpiName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BritishGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BritishGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">228.2</f1:avgSpeed>
+        <f1:trackName>British Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#CanadianGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#CanadianGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">203.64</f1:avgSpeed>
+        <f1:trackName>Canadian Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#CharlesLeclerc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#CharlesLeclerc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver"/>
+        <f1:racesForTeam rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Ferrari"/>
+        <f1:driverName>Charles Leclerc</f1:driverName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Dry_Group3_1Stop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Dry_Group3_1Stop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:strategyName>Dry 1-Stop</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#DutchGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#DutchGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">203.22</f1:avgSpeed>
+        <f1:trackName>Dutch Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#FernandoAlonso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#FernandoAlonso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver"/>
+        <f1:racesForTeam rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AstonMartin"/>
+        <f1:driverName>Fernando Alonso</f1:driverName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Ferrari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Ferrari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team"/>
+        <f1:teamName>Ferrari</f1:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#GeorgeRussell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#GeorgeRussell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver"/>
+        <f1:racesForTeam rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Mercedes"/>
+        <f1:driverName>George Russell</f1:driverName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#TireCompound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighDownforceCluster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighDownforceCluster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Cluster"/>
+        <f1:clusterName>High-downforce / high-cornering</f1:clusterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Cluster"/>
+        <f1:clusterName>High-speed</f1:clusterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HungarianGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HungarianGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LowSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">188.63</f1:avgSpeed>
+        <f1:trackName>Hungarian Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Intermediate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Intermediate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#TireCompound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#ItalianGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#ItalianGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">241.38</f1:avgSpeed>
+        <f1:trackName>Italian Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#JapaneseGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#JapaneseGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">211.61</f1:avgSpeed>
+        <f1:trackName>Japanese Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LandoNorris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LandoNorris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver"/>
+        <f1:racesForTeam rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#McLaren"/>
+        <f1:driverName>Lando Norris</f1:driverName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LasVegasGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LasVegasGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">226.03</f1:avgSpeed>
+        <f1:trackName>Las Vegas Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LewisHamilton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LewisHamilton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver"/>
+        <f1:racesForTeam rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Ferrari"/>
+        <f1:driverName>Lewis Hamilton</f1:driverName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LowSpeedCluster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LowSpeedCluster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Cluster"/>
+        <f1:clusterName>Low-speed / street-like</f1:clusterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MaxSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MaxSpeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#KPI"/>
+        <f1:kpiName>Max Speed</f1:kpiName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MaxVerstappen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MaxVerstappen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Driver"/>
+        <f1:racesForTeam rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#RedBullRacing"/>
+        <f1:driverName>Max Verstappen</f1:driverName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#McLaren -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#McLaren">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team"/>
+        <f1:teamName>McLaren</f1:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#TireCompound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Mercedes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Mercedes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team"/>
+        <f1:teamName>Mercedes</f1:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MexicoCityGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MexicoCityGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LowSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">183.6</f1:avgSpeed>
+        <f1:trackName>Mexico City Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MiamiGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MiamiGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">210.69</f1:avgSpeed>
+        <f1:trackName>Miami Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MinCornerSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MinCornerSpeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#KPI"/>
+        <f1:kpiName>Minimum Corner Speed</f1:kpiName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Cluster"/>
+        <f1:clusterName>Mixed</f1:clusterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MonacoGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MonacoGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LowSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">153.27</f1:avgSpeed>
+        <f1:trackName>Monaco Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#PitUnderSafetyCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#PitUnderSafetyCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>Pit Under Safety Car</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#QatarGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#QatarGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">224.68</f1:avgSpeed>
+        <f1:trackName>Qatar Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#RedBullRacing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#RedBullRacing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team"/>
+        <f1:teamName>Red Bull Racing</f1:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SafetyCarEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SafetyCarEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SafetyCar"/>
+        <f1:triggersStrategyAdjustment rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#PitUnderSafetyCar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SaoPauloGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SaoPauloGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">204.42</f1:avgSpeed>
+        <f1:trackName>São Paulo Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SaudiArabianGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SaudiArabianGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HighSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">235.11</f1:avgSpeed>
+        <f1:trackName>Saudi Arabian Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SingaporeGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SingaporeGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LowSpeedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">179.43</f1:avgSpeed>
+        <f1:trackName>Singapore Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Soft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Soft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#TireCompound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SpanishGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SpanishGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">213.35</f1:avgSpeed>
+        <f1:trackName>Spanish Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_AbuDhabi_MedHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_AbuDhabi_MedHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AbuDhabiGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Australian_Wet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Australian_Wet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AustralianGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherWet"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Intermediate"/>
+        <f1:strategyName>INTERMEDIATE -&gt; INTERMEDIATE -&gt; INTERMEDIATE -&gt; INTERMEDIATE -&gt; HARD -&gt; INTERMEDIATE</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Austrian_MedHardMed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Austrian_MedHardMed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AustrianGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD -&gt; MEDIUM</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Azerbaijan_MedHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Azerbaijan_MedHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#AzerbaijanGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Bahrain_SoftMedMed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Bahrain_SoftMedMed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BahrainGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Soft"/>
+        <f1:strategyName>SOFT -&gt; MEDIUM -&gt; MEDIUM</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Belgian_Wet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Belgian_Wet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BelgianGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherMixed"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Intermediate"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>INTERMEDIATE -&gt; MEDIUM</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_British_Wet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_British_Wet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BritishGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherMixed"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Intermediate"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>INTERMEDIATE -&gt; INTERMEDIATE -&gt; MEDIUM</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Canadian_MedHardHardHardHardHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Canadian_MedHardHardHardHardHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#CanadianGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD -&gt; HARD -&gt; HARD -&gt; HARD -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Dutch_MedHardHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Dutch_MedHardHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#DutchGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Emilia_MedHardHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Emilia_MedHardHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#BritishGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Hungarian_MedHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Hungarian_MedHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#HungarianGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Italian_MedHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Italian_MedHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#ItalianGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Japanese_MedHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Japanese_MedHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#JapaneseGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_LasVegas_MedHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_LasVegas_MedHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#LasVegasGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Mexico_SoftMedSoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Mexico_SoftMedSoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MexicoCityGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Soft"/>
+        <f1:strategyName>SOFT -&gt; MEDIUM -&gt; SOFT</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Monaco_MedHardHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Monaco_MedHardHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MonacoGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Qatar_MedMedHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Qatar_MedMedHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#QatarGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; MEDIUM -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_SaoPaulo_SoftMedMed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_SaoPaulo_SoftMedMed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SaoPauloGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Soft"/>
+        <f1:strategyName>SOFT -&gt; MEDIUM -&gt; MEDIUM</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Saudi_MedHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Saudi_MedHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SaudiArabianGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Singapore_MedHard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Singapore_MedHard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SingaporeGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Hard"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:strategyName>MEDIUM -&gt; HARD</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Spanish_SoftMedSoftSoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_Spanish_SoftMedSoftSoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#SpanishGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Soft"/>
+        <f1:strategyName>SOFT -&gt; MEDIUM -&gt; SOFT -&gt; SOFT</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_US_MedSoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strat_US_MedSoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Strategy"/>
+        <f1:recommendedForTrack rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#UnitedStatesGP"/>
+        <f1:recommendedForWeather rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Medium"/>
+        <f1:usesTire rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Soft"/>
+        <f1:strategyName>MEDIUM -&gt; SOFT</f1:strategyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Suzuka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Suzuka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:trackName>Japanese Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#ThrottleOnTime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#ThrottleOnTime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#KPI"/>
+        <f1:kpiName>Throttle On Time</f1:kpiName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#UnitedStatesGP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#UnitedStatesGP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Track"/>
+        <f1:belongsToTrackCluster rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#MixedCluster"/>
+        <f1:avgSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">194.59</f1:avgSpeed>
+        <f1:trackName>United States Grand Prix</f1:trackName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherDry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Weather"/>
+        <f1:weatherName>Dry</f1:weatherName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherMixed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherMixed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Weather"/>
+        <f1:weatherName>Mixed</f1:weatherName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherWet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#WeatherWet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Weather"/>
+        <f1:weatherName>Wet</f1:weatherName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Wet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Wet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#TireCompound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Williams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Williams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johns/ontologies/2026/2/untitled-ontology-4#Team"/>
+        <f1:teamName>Williams</f1:teamName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
