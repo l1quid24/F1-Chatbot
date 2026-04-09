@@ -8,7 +8,8 @@ import chromadb
 from chromadb.utils import embedding_functions
 import google.generativeai as genai
 import spacy
-from track_vis import render_track_explorer
+
+from track_vis import render_sidebar_controls, render_track_output, detect_vis_intent
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
@@ -311,6 +312,11 @@ if user_input:
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
             try:
+                vis_gp = detect_vis_intent(user_input, extract_entities(user_input)["tracks"])
+                if vis_gp:
+                    st.session_state["vis_track"] = vis_gp
+                    st.rerun()
+
                 answer, entities = ask(user_input, st.session_state.messages)
                 st.markdown(answer)
 
@@ -338,12 +344,8 @@ if user_input:
 
 # Sidebar
 with st.sidebar:
-    st.header("About")
-
+    st.header("How it works")
     st.write(
-        "This chatbot uses **Retrieval-Augmented Generation (RAG)** "
-        "to answer F1 strategy questions.\n\n"
-        "**How it works:**\n"
         "1. **SpaCy NER** extracts track and driver names from your question\n"
         "2. Relevant facts are retrieved from the knowledge base\n"
         "3. **Gemini** generates a natural language answer based on those facts"
@@ -354,10 +356,9 @@ with st.sidebar:
     st.write("- Circuit telemetry clusters (high-speed / mixed / street)")
     st.write("- F1 domain knowledge ontology")
     st.divider()
-
-    render_track_explorer()
+    render_sidebar_controls()
     st.divider()
-
+    render_track_output()
     if st.button("Clear chat history"):
         st.session_state.messages = []
         st.rerun()
