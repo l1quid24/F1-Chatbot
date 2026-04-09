@@ -289,7 +289,7 @@ for msg in st.session_state.messages:
         if msg.get("entities") and (
             msg["entities"]["tracks"] or msg["entities"]["drivers"]
         ):
-            with st.expander("🔍 Entities detected by SpaCy NER", expanded=False):
+            with st.expander("Entities detected by SpaCy NER", expanded=False):
                 if msg["entities"]["tracks"]:
                     st.write("**Tracks:**", ", ".join(msg["entities"]["tracks"]))
                 if msg["entities"]["drivers"]:
@@ -330,7 +330,7 @@ if user_input:
                 # Show NER results in expander (useful for demo / marking)
                 if entities["tracks"] or entities["drivers"]:
                     with st.expander(
-                        "🔍 Entities detected by SpaCy NER", expanded=False
+                        "Entities detected by SpaCy NER", expanded=False
                     ):
                         if entities["tracks"]:
                             st.write("**Tracks:**", ", ".join(entities["tracks"]))

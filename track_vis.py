@@ -187,7 +187,7 @@ def render_sidebar_controls():
     Stores the selected GP in st.session_state['vis_track']
     when the user clicks Load Track.
     """
-    st.subheader("🗺️ Track Explorer")
+    st.subheader("Track Explorer")
     selected = st.selectbox(
         "Select a circuit:",
         options=list(TRACK_SESSION_MAP.keys()),
@@ -208,7 +208,7 @@ def render_track_output():
     if not gp_name:
         return
 
-    st.markdown(f"### 🗺️ {gp_name}")
+    st.markdown(f"### {gp_name}")
     with st.spinner(f"Loading {gp_name} data…"):
         fig = plot_track(gp_name)
         st.pyplot(fig, use_container_width=True)

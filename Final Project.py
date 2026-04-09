@@ -1,13 +1,13 @@
 """
-build_knowledge_base.py
+This file builds the knowledge base by converting raw data files into a ChromaDB vector store.
 Run this once to convert your data files into a ChromaDB vector store.
-Usage: python build_knowledge_base.py
 """
 
 import csv
 import json
 import chromadb
 from chromadb.utils import embedding_functions
+from xml.etree import ElementTree as ET
 
 # ── 1. Load raw data ───────────────────────────────────────────────────────
 
@@ -20,6 +20,52 @@ with open("track_info.json") as f:
 with open("cluster_safetycar_rate.csv") as f:
     reader = csv.DictReader(f)
     safetycar_rates = {row["cluster_name"]: float(row["safety_car_rate"]) for row in reader}
+
+# ── 1b. Parse OWL ontology for driver/team facts ──────────────────────────
+
+def parse_owl_driver_teams(owl_path: str) -> list[dict]:
+    """
+    Parse the F1 ontology OWL file and extract driver → team relationships.
+    Returns a list of dicts: [{driver, team}, ...]
+    """
+    NS = "http://www.semanticweb.org/johns/ontologies/2026/2/F1"
+    tree = ET.parse(owl_path)
+    root = tree.getroot()
+
+    rdf_ns  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    owl_ns  = "http://www.w3.org/2002/07/owl#"
+
+    # Build lookup: individual URI → teamName / driverName
+    team_names   = {}   # uri → display name
+    driver_names = {}   # uri → display name
+    races_for    = {}   # driver uri → team uri
+
+    for individual in root.findall(f"{{{owl_ns}}}NamedIndividual"):
+        uri = individual.get(f"{{{rdf_ns}}}about", "")
+        local = uri.split("#")[-1] if "#" in uri else uri
+
+        # driverName / teamName data properties
+        driver_name_el = individual.find(f"{{{NS}}}driverName")
+        team_name_el   = individual.find(f"{{{NS}}}teamName")
+        races_for_el   = individual.find(f"{{{NS}}}racesForTeam")
+
+        if driver_name_el is not None and driver_name_el.text:
+            driver_names[uri] = driver_name_el.text.strip()
+        if team_name_el is not None and team_name_el.text:
+            team_names[uri] = team_name_el.text.strip()
+        if races_for_el is not None:
+            team_uri = races_for_el.get(f"{{{rdf_ns}}}resource", "")
+            if team_uri:
+                races_for[uri] = team_uri
+
+    results = []
+    for driver_uri, team_uri in races_for.items():
+        driver = driver_names.get(driver_uri, driver_uri.split("#")[-1])
+        team   = team_names.get(team_uri,   team_uri.split("#")[-1])
+        results.append({"driver": driver, "team": team})
+    return results
+
+owl_driver_teams = parse_owl_driver_teams("F1Strategist_Ontology.owl")
 
 # ── 2. Build text chunks ───────────────────────────────────────────────────
 
@@ -179,6 +225,22 @@ general_chunks = [
 ]
 chunks.extend(general_chunks)
 
+# ── Chunk type 5: ontology driver-team facts ──────────────────────────────
+ontology_chunks = []
+for entry in owl_driver_teams:
+    driver = entry["driver"]
+    team   = entry["team"]
+    ontology_chunks.append({
+        "id":   f"ontology_driver_{driver.replace(' ', '_')}",
+        "text": (
+            f"Driver information from F1 ontology:\n"
+            f"{driver} currently races for {team}.\n"
+            f"This means {driver} is a {team} driver in the current Formula 1 season."
+        ),
+        "metadata": {"type": "ontology", "driver": driver, "team": team}
+    })
+chunks.extend(ontology_chunks)
+
 # ── 3. Store in ChromaDB ───────────────────────────────────────────────────
 
 print(f"Building knowledge base with {len(chunks)} chunks...")
@@ -209,3 +271,4 @@ print(f"  - Per-track strategy summaries: {len(strategies_kb)}")
 print(f"  - Per-track safety car advice:  {len(track_info)}")
 print(f"  - Cluster overviews:            {len(CLUSTER_CONTEXT)}")
 print(f"  - General F1 knowledge:         {len(general_chunks)}")
+print(f"  - Ontology driver-team facts:   {len(ontology_chunks)}")
