@@ -8,6 +8,7 @@ import streamlit as st
 import os
 
 # Cache FastF1 data to avoid re-downloading
+os.makedirs("./fastf1_cache", exist_ok=True)
 fastf1.Cache.enable_cache("./fastf1_cache")
 
 # We use 2024 season data where available
