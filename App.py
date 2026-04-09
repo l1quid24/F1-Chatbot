@@ -11,7 +11,7 @@ import spacy
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
-GEMINI_API_KEY = "AIzaSyDvyQ3dIebAt19l26YJUJiKy8gcvDkY1e0"
+GEMINI_API_KEY = st.secrets["AIzaSyDvyQ3dIebAt19l26YJUJiKy8gcvDkY1e0"]
 N_RESULTS      = 4
 
 genai.configure(api_key=GEMINI_API_KEY)
