@@ -8,6 +8,7 @@ import chromadb
 from chromadb.utils import embedding_functions
 import google.generativeai as genai
 import spacy
+from track_vis import render_track_explorer
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
@@ -175,7 +176,6 @@ def retrieve(query: str, entities: dict, n: int = N_RESULTS) -> list[str]:
             results = collection.query(
                 query_texts=[f"{track} strategy safety car"],
                 n_results=2,
-                where={"track": track}
             )
             for doc, mid in zip(results["documents"][0], results["ids"][0]):
                 if mid not in seen_ids:
@@ -269,6 +269,7 @@ for i, suggestion in enumerate(suggestions):
         st.rerun()
 
 st.divider()
+render_track_explorer()
 
 # Chat history
 if "messages" not in st.session_state:

@@ -203,7 +203,7 @@ collection.add(
     metadatas=[c["metadata"] for c in chunks]
 )
 
-print(f"✅ Done! {len(chunks)} chunks stored in ./chroma_db")
+print(f"Done! {len(chunks)} chunks stored in ./chroma_db")
 print("\nChunk types created:")
 print(f"  - Per-track strategy summaries: {len(strategies_kb)}")
 print(f"  - Per-track safety car advice:  {len(track_info)}")
