@@ -90,7 +90,7 @@ Please access the chatbot by using this link: https://f1-chatbot-etbhiwhqdedwg23
 
 ## Data Sources
 
-All of the data comes from fastf1 API and Kaggle.
+All of the data comes from fastf1 API and Kaggle. https://github.com/theOehrly/Fast-F1.git
 | File | Description |
 |---|---|
 | `strategies_kb.json` | Top tyre strategies per race (top 10 finishers, 2024 season) |
