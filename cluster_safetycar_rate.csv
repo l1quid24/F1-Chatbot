@@ -1,0 +1,4 @@
+cluster_name,count,safety_car_rate
+High-speed,8,0.75
+Low-speed / street-like,4,0.5
+Mixed,10,0.5

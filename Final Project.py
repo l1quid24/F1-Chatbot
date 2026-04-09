@@ -4,6 +4,7 @@ Run this once to convert your data files into a ChromaDB vector store.
 Usage: python build_knowledge_base.py
 """
 
+import csv
 import json
 import chromadb
 from chromadb.utils import embedding_functions
@@ -15,6 +16,10 @@ with open("strategies_kb.json") as f:
 
 with open("track_info.json") as f:
     track_info = json.load(f)
+
+with open("cluster_safetycar_rate.csv") as f:
+    reader = csv.DictReader(f)
+    safetycar_rates = {row["cluster_name"]: float(row["safety_car_rate"]) for row in reader}
 
 # ── 2. Build text chunks ───────────────────────────────────────────────────
 
@@ -98,13 +103,19 @@ for gp_name, info in track_info.items():
             f"A safety car may give you a chance to make this stop earlier at lower cost."
         )
 
+
+    sc_rate = safetycar_rates.get(cluster, 0)
+    sc_pct  = int(sc_rate * 100)
+
     chunk = (
         f"Safety car strategy advice for {gp_name}:\n"
         f"Circuit type: {cluster} | Average speed: {avg_speed} km/h\n"
+        f"Historical safety car appearance rate for {cluster} circuits: {sc_pct}%\n"
         f"{SAFETY_CAR_GENERAL}\n"
         f"{CLUSTER_CONTEXT.get(cluster, '')}\n"
         f"{strat_note}"
     )
+    
     chunks.append({
         "id": f"safetycar_{gp_name.replace(' ', '_')}",
         "text": chunk,

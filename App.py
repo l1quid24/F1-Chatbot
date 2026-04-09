@@ -266,6 +266,7 @@ suggestions = [
 for i, suggestion in enumerate(suggestions):
     if cols[i % 2].button(suggestion, use_container_width=True):
         st.session_state["pending_input"] = suggestion
+        st.rerun()
 
 st.divider()
 
@@ -290,10 +291,9 @@ for msg in st.session_state.messages:
                              str(msg["entities"]["raw_entities"]))
 
 # Handle suggested question click
+user_input = st.chat_input("Ask about F1 strategy...")
 if "pending_input" in st.session_state:
     user_input = st.session_state.pop("pending_input")
-else:
-    user_input = st.chat_input("Ask about F1 strategy...")
 
 # Process input
 if user_input:
