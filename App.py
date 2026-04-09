@@ -172,11 +172,18 @@ def retrieve(query: str, entities: dict, n: int = N_RESULTS) -> list[str]:
 
     # Targeted retrieval for detected tracks
     if entities["tracks"]:
+        # Detect if question is safety-car related
+        sc_keywords = ["safety car", "safety-car", "sc ", "deployed", "neutralised"]
+        is_sc_query = any(kw in query.lower() for kw in sc_keywords)
+        query_text_template = "{track} safety car probability advice" if is_sc_query else "{track} tyre strategy"
+
         for track in entities["tracks"][:2]:
             results = collection.query(
-                query_texts=[f"{track} strategy safety car"],
+                query_texts=[query_text_template.format(track=track)],
                 n_results=2,
             )
+
+            
             for doc, mid in zip(results["documents"][0], results["ids"][0]):
                 if mid not in seen_ids:
                     chunks.append(doc)
@@ -268,8 +275,7 @@ for i, suggestion in enumerate(suggestions):
         st.session_state["pending_input"] = suggestion
         st.rerun()
 
-st.divider()
-render_track_explorer()
+
 
 # Chat history
 if "messages" not in st.session_state:
@@ -333,6 +339,7 @@ if user_input:
 # Sidebar
 with st.sidebar:
     st.header("About")
+
     st.write(
         "This chatbot uses **Retrieval-Augmented Generation (RAG)** "
         "to answer F1 strategy questions.\n\n"
@@ -346,6 +353,9 @@ with st.sidebar:
     st.write("- Tyre strategy records (top 10 finishers per race)")
     st.write("- Circuit telemetry clusters (high-speed / mixed / street)")
     st.write("- F1 domain knowledge ontology")
+    st.divider()
+
+    render_track_explorer()
     st.divider()
 
     if st.button("Clear chat history"):
