@@ -259,7 +259,7 @@ st.set_page_config(
 
 st.title("🏎️ F1 Strategy Chatbot")
 st.caption(
-    "Ask me anything about Formula 1 race strategy — tyre choices, "
+    "Ask me anything about Formula 1 race strategy: tyre choices, "
     "safety car decisions, circuit characteristics, and more."
 )
 
